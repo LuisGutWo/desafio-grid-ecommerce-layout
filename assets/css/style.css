@@ -7,7 +7,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  background-color: #DCD7C9;
+  background-color: #dcd7c9;
   font-family: "Roboto", sans-serif;
 }
 
@@ -19,43 +19,33 @@ body {
   grid-template-areas:
     "header header header"
     "aside-navbar main main"
-    "gallery gallery gallery"  
+    "gallery gallery gallery"
     "footer footer footer";
 }
 
 /* header */
 .header {
   grid-area: header;
-  background-color:#121922d7;
-  height: 140px;
+  background-color: #121922d7;
+  height: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .header img {
-  width: 200px;
-  padding: 20px;
+  width: 150px;
+  padding: 5px;
+  margin-left: 15px;
   border-radius: 30px;
-}
-
-.gallery {
-  grid-area: gallery;
-  height: 400px;
-  background-image: url(/assets/img/tama-section-dum.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin: 0;
-
 }
 
 /* aside navbar */
 .aside-navbar {
   grid-area: aside-navbar;
-  border: red solid 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 200px;
 }
-
-
-
 
 /* main section */
 .main {
@@ -64,10 +54,6 @@ body {
   display: flex;
   gap: 10px;
 }
-
-
-
-
 
 /* cards section */
 .cards-container {
@@ -125,7 +111,6 @@ body {
   background-repeat: no-repeat;
 }
 
-
 .card-content {
   display: flex;
   flex-direction: column;
@@ -157,21 +142,58 @@ body {
 
 /* card-content button */
 .btn {
-  background-color: #3F4E4F;
+  background-color: #3f4e4f;
   border-style: none;
   color: whitesmoke;
   font-size: 0.8rem;
   height: 60px;
 }
 .btn:hover {
-  background-color: #A27B5C;
+  background-color: #a27b5c;
 }
 
+/* gallery */
+.gallery {
+  grid-area: gallery;
+  height: 500px;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  justify-content: center;
+  background-image: url(/assets/img/udwig-snare-drum.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+}
+.gallery img {
+  width: 350px;
+  padding: 10px;
+  margin: 30px;
+}
+.gallery h4 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 7px;
+  padding-right: 29px;
+}
+.gallery i {
+  font-size: 0.8rem;
+  margin: 7px;
+  padding-right: 20px;
+  text-align: end;
+}
 
 /* footer */
 .footer {
   grid-area: footer;
-  background-color: #533483;
+  color: whitesmoke;
+  background-color: #a27b5c;
+  font-size: 1.3rem;
   height: 100px;
-  border: red solid 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
