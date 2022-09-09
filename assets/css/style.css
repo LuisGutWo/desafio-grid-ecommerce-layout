@@ -7,7 +7,12 @@ html {
   box-sizing: inherit;
 }
 body {
-  background-color: #dcd7c9;
+  /* background-color: #dcd7c9; */
+  background-image: url(/assets/img/smoke-wallpaper.jpg);
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: "Roboto", sans-serif;
 }
 
@@ -28,10 +33,11 @@ body {
   grid-area: header;
   background-color: #121922d7;
   height: 100%;
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
+  padding: 10px;
 }
 .header img {
   width: 180px;
@@ -69,12 +75,12 @@ body {
   width: 200px;
 }
 .aside-navbar h2 {
-  color: #3f4e4f;
+  color: whitesmoke;
   margin-bottom: 10px;
 }
 .aside-navbar p {
   font-size: 0.8rem;
-  color: #3f4e4f;
+  color: whitesmoke;
   margin-top: 6px;
   margin-bottom: 6px;
 }
@@ -191,11 +197,6 @@ body {
   text-align: center;
   padding: 0 18px;
   margin-bottom: 12px;
-  /* margin-bottom: 10px;
-  padding-bottom: 10px;
-  margin-top: 0px;
-  padding-left: 18px;
-  padding-right: 18px;  */
 }
 .card-content span {
   font-size: 0.8rem;
@@ -260,7 +261,7 @@ body {
 .footer {
   grid-area: footer;
   color: whitesmoke;
-  background-color: #a27b5c;
+  background-color: #222424;
   font-size: 1.3rem;
   height: 100px;
   display: flex;
