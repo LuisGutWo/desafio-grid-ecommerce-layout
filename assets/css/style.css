@@ -61,7 +61,7 @@ body {
   text-decoration: none;
 }
 .header-navbar a:hover {
-  color: #6f232f;
+  color: #fff;
   text-shadow: 0px 0px 3px #fff;
   transition: all 0.2s ease;
 }
@@ -104,6 +104,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
+  /* overflow: hidden; */
 }
 .card {
   display: flex;
