@@ -8,10 +8,7 @@ html {
 }
 body {
   /* background-color: #dcd7c9; */
-  background-image: url(/assets/img/smoke-wallpaper.jpg);
-  background-attachment: fixed;
-  background-position: top;
-  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, #575757 0%, black 100%);
   background-size: cover;
   font-family: "Roboto", sans-serif;
 }
@@ -27,17 +24,27 @@ body {
     "gallery gallery gallery"
     "footer footer footer";
 }
+@media (max-width: 576px) {
+  .main-container{
+    grid-template-areas:
+    "header"
+    "aside-navbar"
+    "main"
+    "gallery"
+    "footer";
+  }
+}
 
 /* header */
 .header {
   grid-area: header;
-  background-color: #121922d7;
+  background-color: #121922b2;
   height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-end;
   padding: 10px;
+}
+.container-fluid {
+  display: flex;
+  justify-content: flex-end;
 }
 .header img {
   width: 180px;
@@ -47,22 +54,24 @@ body {
 }
 .header-navbar {
   display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  width: 500px;
-  height: 50px;
-  margin-right: 40px;
+  justify-content: flex-end;
+  height: 100%;
   flex-basis: auto;
   flex-shrink: 1;
 }
-.header-navbar a {
+.navbar-nav {
+  display: flex;
+  flex: auto;
+  justify-content: flex-end;
+}
+.navbar-nav a {
   font-size: 1.5rem;
-  color: whitesmoke;
+  color: rgb(92, 92, 92);
   text-decoration: none;
 }
-.header-navbar a:hover {
-  color: #fff;
-  text-shadow: 0px 0px 3px #fff;
+.navbar-nav a:hover {
+  color: white;
+  text-shadow: 1px 1px 6px #fff;
   transition: all 0.2s ease;
 }
 
@@ -89,6 +98,7 @@ body {
 .aside-navbar a:hover {
   color: white;
   text-shadow: 1px 1px 6px #fff;
+  transition: all 0.2s ease;
 }
 
 /* main section */
@@ -121,6 +131,7 @@ body {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.3);
   transition: all 0.2s ease;
+  transform: scale(1.02);
 }
 
 /* cards image */

@@ -12,21 +12,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/16a3b08151.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
     <!-- main container -->
-    <main class="main-container">
+    <main class="main-container mh-vh">
 
         <!-- header -->
-        <header class="header box">
-            <img src="assets/img/upbeat-drums-portada.jpg" alt="logo upbeat">
-            <div class="header-navbar">
-                <a href="#" type="button">Inicio</a>
-                <a href="#" type="button">Nosotros</a>
-                <a href="#" type="button">Contacto</a>
+
+        <nav class="header navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <img src="assets/img/upbeat-drums-portada.jpg" alt="logo upbeat">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-light"></span>
+                </button>
+                <div class="header-navbar collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </header>
+        </nav>
+
+
+
 
         <!-- aside navbar -->
         <aside class="aside-navbar box">
@@ -51,7 +72,7 @@
                         <p>Modelo Rythim Mate. 6 capas de Birch, Set Club de 4 piezas sin hardware</p>
                         <span>$ 420.000</span>
                     </div>
-                    <button class="btn" type="button">Comprar</button>
+                    <button class="btn btn-danger" type="button">Comprar</button>
                 </div>
                 <div class="card">
                     <div class="card-image-2"></div>
@@ -60,7 +81,7 @@
                         <p>Modelo Catalina Rock set, 8 capas de 100% madera Birch</p>
                         <span>$ 789.000</span>
                     </div>
-                    <button class="btn" type="button">Comprar</button>
+                    <button class="btn btn-danger" type="button">Comprar</button>
                 </div>
                 <div class="card">
                     <div class="card-image-3"></div>
@@ -69,7 +90,7 @@
                         <p>Mitica Tama Starclassic, de origen Japones y hecha a mano en madera de Abedul</p>
                         <span>$ 1.200.000</span>
                     </div>
-                    <button class="btn" type="button">Comprar</button>
+                    <button class="btn btn-danger" type="button">Comprar</button>
                 </div>
                 <div class="card">
                     <div class="card-image-4"></div>
@@ -78,7 +99,7 @@
                         <p>Yamaha Tour Coustom, hecha 100% de Mapple y cascos con sistema de prensado al calor</p>
                         <span>$ 860.000</span>
                     </div>
-                    <button class="btn" type="button">Comprar</button>
+                    <button class="btn btn-danger" type="button">Comprar</button>
                 </div>
                 <div class="card">
                     <div class="card-image-5"></div>
@@ -87,7 +108,7 @@
                         <p>100% Mapple de 12 capas. Sistema flotante de toms y bombo virgen. Set de 6 piezas</p>
                         <span>$ 990.000</span>
                     </div>
-                    <button class="btn" type="button">Comprar</button>
+                    <button class="btn btn-danger" type="button">Comprar</button>
                 </div>
                 <div class="card">
                     <div class="card-image-6"></div>
@@ -96,7 +117,7 @@
                         <p>Modelo Export, hecha en Bubinga y Birch y sistema FSP de toms flotantes</p>
                         <span>$ 700.000</span>
                     </div>
-                    <button class="btn" type="button">Comprar</button>
+                    <button class="btn btn-danger" type="button">Comprar</button>
                 </div>
                 <div class="card">
                     <div class="card-image-7"></div>
@@ -105,7 +126,7 @@
                         <p>Blackbeauty... habla por si sola. De Steel con acabado negro mate, 14¨x 6¨ 10 lugs</p>
                         <span>$ 680.000</span>
                     </div>
-                    <button class="btn" type="button">Comprar</button>
+                    <button class="btn btn-danger" type="button">Comprar</button>
                 </div>
                 <div class="card">
                     <div class="card-image-8"></div>
@@ -114,7 +135,7 @@
                         <p>Modelo A Coustom 100% aleacion B20. Ping Ride de 20¨</p>
                         <span>$ 240.000</span>
                     </div>
-                    <button class="btn" type="button">Comprar</button>
+                    <button class="btn btn-danger" type="button">Comprar</button>
                 </div>
             </article>
         </section>
@@ -128,15 +149,17 @@
             <i class="fa fa-instagram"> upbeat_drum_studios</i>
         </div>
 
-        
+
         <!-- footer -->
         <footer class="footer">
             <a href="http:" #" type="button">@ upbeat_drums</a>
         </footer>
 
-
-        
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
