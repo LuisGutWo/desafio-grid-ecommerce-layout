@@ -26,7 +26,7 @@ body {
 }
 @media (max-width: 576px) {
   .main-container{
-    grid-template-areas:
+    grid-template-areas: 
     "header"
     "aside-navbar"
     "main"
@@ -38,7 +38,8 @@ body {
 /* header */
 .header {
   grid-area: header;
-  background-color: #121922b2;
+  background-image: linear-gradient(120deg, #0a0c0f 0%, #44606d 100%);
+  margin: 0 0 1rem 0;
   height: 100%;
   padding: 10px;
 }
@@ -52,6 +53,10 @@ body {
   margin-left: 15px;
   border-radius: 25px;
 }
+.container-fluid button {
+  border: #fff solid 1px;
+}
+
 .header-navbar {
   display: flex;
   justify-content: flex-end;
@@ -81,6 +86,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-top: 1rem;
   padding-left: 30px;
   width: 200px;
 }
@@ -104,6 +110,7 @@ body {
 /* main section */
 .main {
   grid-area: main;
+  margin-top: 1rem;
   padding: 12px;
   display: flex;
   gap: 10px;
@@ -136,7 +143,7 @@ body {
 
 /* cards image */
 .card-image-1 {
-  background-image: url(/assets/img/bateria-tama-rhythm-mate-de-5-piezas-color-hairline-blue-212213-1.webp);
+  background-image: url(/assets/img/Starclassic-Performer-Tama.jpg);
   width: 100%;
   height: 100vh;
   background-position: center;
@@ -152,7 +159,7 @@ body {
   background-repeat: no-repeat;
 }
 .card-image-3 {
-  background-image: url(/assets/img/bateria-acustica-tama-starclassic-performer-22-10-12-14-16-dark-cherry-fade.jpg);
+  background-image: url(/assets/img/bateria_tama_starclassic.jpg);
   width: 100%;
   height: 100vh;
   background-position: center;
@@ -258,7 +265,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin: 0;
+  margin: 2rem 0 0 0;
   padding-top: 0;
 }
 .gallery img {
@@ -283,7 +290,7 @@ body {
 /* footer */
 .footer {
   grid-area: footer;
-  background-color: #222424;
+  background-color: #030303;
   height: 100px;
   display: flex;
   justify-content: center;
