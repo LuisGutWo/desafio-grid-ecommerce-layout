@@ -255,12 +255,12 @@ body {
 .gallery {
   grid-area: gallery;
   height: 500px;
-  color: whitesmoke;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-content: flex-end;
   justify-content: center;
+  align-content: flex-end;
+  color: whitesmoke;
   background-image: url(/assets/img/udwig-snare-drum.webp);
   background-repeat: no-repeat;
   background-position: center;
