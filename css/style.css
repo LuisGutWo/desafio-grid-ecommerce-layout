@@ -143,68 +143,76 @@ body {
 
 /* cards image */
 .card-image-1 {
-  background-image: url(/assets/img/Starclassic-Performer-Tama.jpg);
+  background-image: url(/assets/img/Starclassic-Performer-Tama.jpg)!important;
   width: 100%;
   height: 100vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 .card-image-2 {
-  background-image: url(/assets/img/GRETSCH_CATALINA.jpg);
+  background-image: url(/assets/img/GRETSCH_CATALINA.jpg)!important;
   width: 100%;
   height: 100vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 .card-image-3 {
-  background-image: url(/assets/img/bateria_tama_starclassic.jpg);
+  background-image: url(/assets/img/bateria_tama_starclassic.jpg)!important;
   width: 100%;
   height: 100vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 .card-image-4 {
-  background-image: url(/assets/img/GIGMAKER_540x540_735x735_d7f846d8f553cd78c8c121aaaa2d6ae5.webp);
+  background-image: url(/assets/img/GIGMAKER_540x540_735x735_d7f846d8f553cd78c8c121aaaa2d6ae5.webp)!important;
   width: 100%;
   height: 100vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 .card-image-5 {
-  background-image: url(/assets/img/preview.jpg);
+  background-image: url(/assets/img/preview.jpg)!important;
   width: 100%;
   height: 100vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 .card-image-6 {
-  background-image: url(/assets/img/pearl-drum-yellow.jpg);
+  background-image: url(/assets/img/pearl-drum-yellow.jpg)!important;
   width: 100%;
   height: 100vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 .card-image-7 {
-  background-image: url(/assets/img/snare-blackbeauty.jpg);
+  background-image: url(/assets/img/snare-blackbeauty.jpg)!important;
   width: 100%;
   height: 100vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 .card-image-8 {
-  background-image: url(/assets/img/zildjian-cymbal.webp);
+  background-image: url(/assets/img/zildjian-cymbal.webp) !important;
   width: 100%;
   height: 100vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 /* cards content */
@@ -261,7 +269,7 @@ body {
   justify-content: center;
   align-content: flex-end;
   color: whitesmoke;
-  background-image: url(/assets/img/udwig-snare-drum.webp);
+  background-image: url(/assets/img/udwig-snare-drum.webp)!important;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
